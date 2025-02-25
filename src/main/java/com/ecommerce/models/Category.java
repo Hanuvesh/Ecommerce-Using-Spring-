@@ -1,4 +1,4 @@
-package models;
+package com.ecommerce.models;
 
 import jakarta.persistence.*;
 

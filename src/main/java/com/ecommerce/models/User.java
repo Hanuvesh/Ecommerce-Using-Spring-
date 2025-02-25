@@ -1,9 +1,9 @@
-package models;
+package com.ecommerce.models;
 
 import jakarta.persistence.*;
 
 @Entity(name="CUSTOMER")
-@Table
+@Table(name="CUSTOMER")
 public class User
 {
     @Id

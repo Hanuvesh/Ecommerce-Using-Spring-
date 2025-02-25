@@ -1,4 +1,4 @@
-package models;
+package com.ecommerce.models;
 
 import jakarta.persistence.*;
 
@@ -20,9 +20,11 @@ public class CartProduct
     public CartProduct() {
         product = null;
     }
-    public CartProduct(Cart cart, Product product) {
-        this.cart=cart;
-        this
+    public CartProduct(Cart cart, Product product)
+    {
+        this.cart = cart;
+        this.product = product;
+    }
 
     public int getId() {
         return id;

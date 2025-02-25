@@ -1,4 +1,4 @@
-package models;
+package com.ecommerce.models;
 
 
 import jakarta.persistence.*;
@@ -13,7 +13,7 @@ public class Product
     private String name;
     private String image;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "category_id",referencedColumnName = "category_id")
     private Category category;
 
